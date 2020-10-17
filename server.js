@@ -3,9 +3,9 @@ var Sequelize = require("sequelize")
 
 //connect to mysql database
 //baza de date, username, password
-var sequelize = new Sequelize('catalog', 'root', 'pass', {
+var sequelize = new Sequelize('catalog', 'dominhduc1997', 'duc1997', {
     dialect:'mysql',
-    host:'db'
+    host:'127.0.0.1'
 })
 
 sequelize.authenticate().then(function(){
@@ -205,6 +205,7 @@ app.get('/categories/:id/products', function(request, response) {
 })
 
 app.get('/reviews', function(request, response) {
+    
 
 })
 
